@@ -43,7 +43,7 @@
 #include "WebViewCore.h"
 #include "npruntime.h"
 
-#include <gui/ISurfaceComposer.h>
+#include <surfaceflinger/ISurfaceComposer.h>
 #include <gui/SurfaceComposerClient.h>
 #include <ui/DisplayInfo.h>
 #include <ui/PixelFormat.h>
