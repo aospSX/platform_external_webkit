@@ -50,7 +50,6 @@ public:
     virtual void filter(SkPaint* paint, Type)
     {
         paint->setAlpha(m_opacity);
-        return false;
     }
 private:
     int m_opacity;
