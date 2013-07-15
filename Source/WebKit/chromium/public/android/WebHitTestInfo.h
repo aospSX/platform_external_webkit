@@ -46,19 +46,13 @@ public:
     WebHitTestInfo(const WebHitTestInfo&);
     ~WebHitTestInfo();
 
-    // The absolute URL of the link returned by the hit test.
-    WEBKIT_API WebURL linkURL() const;
-
-    // The absolute URL of the image returned by the hit test.
-    WEBKIT_API WebURL imageURL() const;
-
     // The node that got hit.
     WEBKIT_API WebCore::Node* node() const;
 
     // Point coordinates of the hit.
     WEBKIT_API WebPoint point() const;
 
-    // True iff the hit was on an editable field or node.
+    // True if the hit was on an editable field or node.
     WEBKIT_API bool isContentEditable() const;
 
 #if WEBKIT_IMPLEMENTATION
