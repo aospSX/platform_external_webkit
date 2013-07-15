@@ -46,19 +46,9 @@ WebHitTestInfo::WebHitTestInfo(const WebHitTestInfo& testInfo)
 {
 }
 
-WebURL WebHitTestInfo::linkURL() const
-{
-    return m_private->absoluteLinkURL();
-}
-
 WebHitTestInfo::~WebHitTestInfo()
 {
     m_private.reset(0);
-}
-
-WebURL WebHitTestInfo::imageURL() const
-{
-    return m_private->absoluteImageURL();
 }
 
 Node* WebHitTestInfo::node() const
