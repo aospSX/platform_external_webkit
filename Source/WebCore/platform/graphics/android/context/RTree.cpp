@@ -360,6 +360,7 @@ void Node::remove(Node* node)
 
 void Node::destroy(int index)
 {
+    delete m_children[index];
     // compact
     for (unsigned int i = index; i < m_nbChildren - 1; i++)
         m_children[i] = m_children[i + 1];
